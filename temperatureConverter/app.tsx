@@ -10,7 +10,7 @@ class TemperatureConverter extends Component<{}, State> {
     super(props);
     this.state = {
       temperature: 0,
-      scale: "c", // default scale
+      scale: "c", 
     };
   }
 
@@ -26,8 +26,8 @@ class TemperatureConverter extends Component<{}, State> {
 
   convertTemperature = (temperature: number, scale: "c" | "f") => {
     return scale === "c"
-      ? (temperature * 9) / 5 + 32 // Celsius to Fahrenheit
-      : ((temperature - 32) * 5) / 9; // Fahrenheit to Celsius
+      ? (temperature * 9) / 5 + 32 
+      : ((temperature - 32) * 5) / 9; 
   };
 
   render() {
